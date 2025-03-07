@@ -1,5 +1,4 @@
 //access credentials
-require("dotenv").config();
 
 //All packages
 const express = require("express");
@@ -18,7 +17,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:3000", // Allow requests from this origin
+    origin: "https://code-veritus505.vercel.app/", // Allow requests from this origin
     credentials: true, // Allow cookies and credentials
   })
 );
